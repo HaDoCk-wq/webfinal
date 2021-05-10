@@ -28,7 +28,7 @@ class LdapAC{
         }
 
     }
-    
+
 
     public function authUser($pass , $authDn = null)
     {
@@ -62,7 +62,11 @@ class LdapAC{
                 break;
         }
 
+        //$query = ldap_search($this->conn , $base , $whereClause);
+        dump($whereClause);
+
         $query = ldap_search($this->conn , $base , $whereClause);
+
         if(!empty($query)){
             return ldap_get_entries($this->conn , $query);
         }else{
