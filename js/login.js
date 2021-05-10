@@ -1,5 +1,5 @@
 jQuery.validator.addMethod("passwordViable", function (value, element, params) {
-  return /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]$/.test(value);
+  return /^(?=.*[0-9])(?=.*[a-zA-Z])([a-zA-Z0-9]+)$/.test(value);
 });
 
 $("#form").validate({
