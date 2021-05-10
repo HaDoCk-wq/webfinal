@@ -11,8 +11,8 @@ class LdapAC{
     'host' => 'ldap://localhost',
     'port' => '389',
     'root' => 'dc=dawAC,dc=cat',
-    'alumnesAC' => 'ou=alumnesAC,dc=dawAC,dc=cat',
-    'professorsAC' => 'ou=professorsAC,dc=dawAC,dc=cat',
+    'alumnesAC' => 'cn=alumnesAC,ou=grups,dc=dawAC,dc=cat',
+    'professorsAC' => 'cn=professorsAC,ou=grups,dc=dawAC,dc=cat',
         'adminAuthData' => [
             'dn' => 'cn=admin,dc=dawAC,dc=cat',
             'user' => 'admin',
@@ -28,6 +28,7 @@ class LdapAC{
         }
 
     }
+    
 
     public function authUser($pass , $authDn = null)
     {
