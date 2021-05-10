@@ -11,8 +11,8 @@ class LdapAC{
     'host' => 'ldap://localhost',
     'port' => '389',
     'root' => 'dc=dawAC,dc=cat',
-    'alumnes' => 'cn=alumnes,ou=grups,dc=dawAC,dc=cat',
-    'professors' => 'cn=professors,ou=grups,dc=dawAC,dc=cat',
+    'alumnesAC' => 'cn=alumnesAC,ou=grups,dc=dawAC,dc=cat',
+    'professorsAC' => 'cn=professorsAC,ou=grups,dc=dawAC,dc=cat',
         'adminAuthData' => [
             'dn' => 'cn=admin,dc=dawAC,dc=cat',
             'user' => 'admin',
@@ -50,11 +50,11 @@ class LdapAC{
             $whereClause = '()';
         }
         switch ($group){
-            case 'professors' :
-                $base = $this->ldapConfig['professors'];
+            case 'professorsAC' :
+                $base = $this->ldapConfig['professorsAC'];
                 break;
-            case 'alumnes' :
-                $base = $this->ldapConfig['alumnes'];
+            case 'alumnesAC' :
+                $base = $this->ldapConfig['alumnesAC'];
                 break;
             case '*' :
                 $base = $this->ldapConfig['root'];
