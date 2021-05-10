@@ -10,7 +10,7 @@ if(!empty($pass)){
         header('Location: ../ldapForm.php');
     }else{
         $_SESSION['loginError'] = 'Login incorrecte';
-        header('Location: ../login.php');
+        header('Location: ../loginForm.php');
     }
 }else{
     $_SESSION['loginError'] = 'No pot existir cap camp buit';
