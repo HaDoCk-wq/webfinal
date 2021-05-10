@@ -1,8 +1,17 @@
 jQuery.validator.addMethod("telefonValid", function (value, element, params) {
-  return /^(\+34|0034|34)?[89]\d{8}$/.test(value);
+  if (/^(\+34|0034|34)?[89]\d{8}$/.test(value)) {
+    return true;
+  } else if (value == "") {
+    return true;
+  }
+  return false;
 });
 jQuery.validator.addMethod("mobilValid", function (value, element, params) {
-  return /^[679]{1}[0-9]{8}$/.test(value);
+  if (/^[679]{1}[0-9]{8}$/.test(value)) {
+    return true;
+  } else if (value == "") {
+    return true;
+  }
 });
 
 $("#formulari").validate({
