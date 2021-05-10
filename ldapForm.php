@@ -138,53 +138,52 @@ session_start();
     <br>
     <?php if(isset($_SESSION['resultats'])): ?>
         <div class="container">
+            <h1 class="mt-2">Resultat</h1>
+            <br>
+            <table class="table  table-hover table-striped caption-top">
+                <caption style="text-align:right">Resultats de la cerca</caption>
 
-        <h1 class="mt-2">Resultat</h1>
-        <br>
-        <table class="table  table-hover table-striped caption-top">
-            <caption style="text-align:right">Resultats de la cerca</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Nom</th>
+                        <th scope="col">Cognoms</th>
+                        <th scope="col" colspan="2">Telefons (inclou fix i mobil)</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Nom d’usuari</th>
+                        <th scope="col">Institut</th>
+                        <th scope="col">Grup</th>
+                    </tr>
+                </thead>
 
-            <thead>
-                <tr>
-                    <th scope="col">Nom</th>
+                <tbody>
+                    <?php foreach ($_SESSION['resultats'] as $linia) : ?>
+                        <?php if($linia['cn'][0]): ?>
+                            <tr>
+                                <td><?= $linia['cn'][0] ?></td>
+                                <td><?= $linia['sn'][0] ?></td>
+                                <td><?= $linia['telephonenumber'][0] ?></td>
+                                <td><?= $linia['mobile'][0] ?></td>
+                                <td><?= $linia['mail'][0] ?></td>
+                                <td><?= $linia['uid'][0] ?></td>
+                                <td><?= $linia['o'][0] ?></td>
+                                <td><?= $linia['ou'][0] ?></td>
+                            </tr>
+                        <?php endif; ?>
+                    <?php endforeach; ?>
+                </tbody>
+
+                <tfoot>
+                    <th scope="col">Nom d’usuari</th>
                     <th scope="col">Cognoms</th>
                     <th scope="col" colspan="2">Telefons (inclou fix i mobil)</th>
                     <th scope="col">Email</th>
                     <th scope="col">Nom d’usuari</th>
                     <th scope="col">Institut</th>
                     <th scope="col">Grup</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <?php foreach ($_SESSION['resultats'] as $linia) : ?>
-                    <?php if($linia['cn'][0]): ?>
-                        <tr>
-                            <td><?= $linia['cn'][0] ?></td>
-                            <td><?= $linia['sn'][0] ?></td>
-                            <td><?= $linia['telephonenumber'][0] ?></td>
-                            <td><?= $linia['mobile'][0] ?></td>
-                            <td><?= $linia['mail'][0] ?></td>
-                            <td><?= $linia['uid'][0] ?></td>
-                            <td><?= $linia['o'][0] ?></td>
-                            <td><?= $linia['ou'][0] ?></td>
-                        </tr>
-                    <?php endif; ?>
-                <?php endforeach; ?>
-            </tbody>
-
-            <tfoot>
-                <th scope="col">Nom d’usuari</th>
-                <th scope="col">Cognoms</th>
-                <th scope="col" colspan="2">Telefons (inclou fix i mobil)</th>
-                <th scope="col">Email</th>
-                <th scope="col">Nom d’usuari</th>
-                <th scope="col">Institut</th>
-                <th scope="col">Grup</th>
-            </tfoot>
-
-        </table>
-    </div>
+                </tfoot>
+            </table>
+        </div>
+        <?php isset($_SESSION['resultats'] = null; ?>
     <?php endif; ?>
 </body>
 
