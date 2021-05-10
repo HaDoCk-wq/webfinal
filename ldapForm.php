@@ -19,42 +19,44 @@ session_start();
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
 
     <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/navbar.css">
 </head>
 
 
 <body>
-
-        <nav class="navbar navbar-expand-lg p-0 navbar-light fixed-top mb-4">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">Accesibilitat</a>
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link topbar" aria-current="page"
-                                href="perceptibilitat.html">Perceptibilitat</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link topbar" href="operabilitat.html">Operabilitat</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link topbar" href="comprensibilitat.html">Comprensibilitat</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link topbar" href="robustesa.html">Robustesa</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active topbar" href="loginForm.php">formulari</a>
-                        </li>
-                    </ul>
-                </div>
+    <nav class="navbar navbar-expand-lg p-0 navbar-light fixed-top mb-4">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Accesibilitat</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link topbar" aria-current="page"
+                            href="perceptibilitat.html">Perceptibilitat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link topbar" href="operabilitat.html">Operabilitat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link topbar" href="comprensibilitat.html">Comprensibilitat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link topbar" href="robustesa.html">Robustesa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active topbar" href="loginForm.php">Formulari</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
 
+    <br>
     <div class="container">
         <nav class="mt-4"
             style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
