@@ -136,7 +136,6 @@ session_start();
         </form>
     </div>
     <br>
-    <?php var_dump($_SESSION['resultats']) ?>
     <?php if(isset($_SESSION['resultats'])): ?>
         <div class="container">
 
