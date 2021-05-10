@@ -69,7 +69,7 @@ session_start();
         </nav>
         <h1 class="mt-2">Formulari</h1>
         <br>
-        <form action="" method="POST" id="formulari">
+        <form action="controller/search.php" method="POST" id="formulari">
             <div class="row">
                 <div class="col-md-12">
                     <div class="mb-3">

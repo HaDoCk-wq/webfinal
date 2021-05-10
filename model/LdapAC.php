@@ -63,8 +63,6 @@ class LdapAC{
         }
 
         //$query = ldap_search($this->conn , $base , $whereClause);
-        dump($whereClause);
-
         $query = ldap_search($this->conn , $base , $whereClause);
 
         if(!empty($query)){
