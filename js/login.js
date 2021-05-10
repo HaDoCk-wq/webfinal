@@ -6,7 +6,7 @@ $("#form").validate({
   rules: {
     password: {
       required: true,
-      passwordViable: true,
+      // passwordViable: true,
       minlength: 3,
     },
   },
@@ -15,8 +15,8 @@ $("#form").validate({
     password: {
       required: "Introdueix la contrasenya",
       minlength: "Introdueix com a minim 8 caracters",
-      passwordViable:
-        "Aquesta contrasenya no es correcte (8 caracters i com a minim un numero i una lletra)",
+      // passwordViable:
+      //   "Aquesta contrasenya no es correcte (8 caracters i com a minim un numero i una lletra)",
     },
   },
 });
