@@ -124,8 +124,8 @@ session_start();
                     <label for="username" class="text-sec">Grup</label>
                     <select class="form-select input form-select-lg mb-3" aria-label=".form-select-lg example" name="grup">
                         <option value="" selected>Tots</option>
-                        <option value="professors">Professors</option>
-                        <option value="alumnes">Alumnes</option>
+                        <option value="professorsAC">Professors</option>
+                        <option value="alumnesAC">Alumnes</option>
                     </select>
                 </div>
             </div>
