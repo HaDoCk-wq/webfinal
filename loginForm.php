@@ -53,6 +53,9 @@ session_start();
                     </div>
                     
                 <?php endif; ?>
+
+                <?php $_SESSION['loginError'] = "": ?>
+
             </form>
         </div>
     </div>
