@@ -39,9 +39,9 @@ if(!empty($_POST['o'])){
     $filtre = $filtre . '(o=' . $aux . ')';
 }
 
-if(!empty($_POST['user name'])){
-    $aux = $_POST['user name'];
-    $filtre = $filtre . '(user name=' . $aux . ')';
+if(!empty($_POST['uid'])){
+    $aux = $_POST['uid'];
+    $filtre = $filtre . '(uid=' . $aux . ')';
 }
 
 if(!empty($_POST['grup'])){
