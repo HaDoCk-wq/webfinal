@@ -25,6 +25,7 @@ session_start();
 
 
 <body>
+    <br>
     <nav class="navbar navbar-expand-lg p-0 navbar-light fixed-top mb-4">
         <div class="container">
             <a class="navbar-brand" href="index.html">Accesibilitat</a>
@@ -135,16 +136,8 @@ session_start();
         </form>
     </div>
     <br>
-    <?php if($_SESSION['resultats']): ?>
+    <?php if(isset($_SESSION['resultats'])): ?>
         <div class="container">
-        <nav class="mt-4"
-            style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
-            aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="/form.html">Filtre</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Resultat</li>
-            </ol>
-        </nav>
 
         <h1 class="mt-2">Resultat</h1>
         <br>
