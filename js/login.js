@@ -1,5 +1,5 @@
 jQuery.validator.addMethod("passwordViable", function (value, element, params) {
-  return /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{7,}$/.test(value);
+  return /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]$/.test(value);
 });
 
 $("#form").validate({
@@ -16,7 +16,7 @@ $("#form").validate({
       required: "Introdueix la contrasenya",
       minlength: "Introdueix com a minim 8 caracters",
       passwordViable:
-        "Aquesta contrasenya no es correcte (8 caracters i com a minim un numero i una lletra)",
+        "Aquesta contrasenya no es correcte (Com a minim un numero i una lletra)",
     },
   },
 });
