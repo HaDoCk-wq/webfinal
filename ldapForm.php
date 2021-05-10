@@ -165,7 +165,7 @@ session_start();
                             <td><?= $linia['mobile'][0] ?></td>
                             <td><?= $linia['mail'][0] ?></td>
                             <td><?= $linia['o'][0] ?></td>
-                            <td><?= $linia['cn'][0] ?></td>
+                            <td><?= $linia['ou'][0] ?></td>
                         </tr>
                     <?php endif; ?>
                 <?php endforeach; ?>
