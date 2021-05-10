@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprensibilitat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/theme.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#list-example">
+
+    <header>
+        <nav class="navbar navbar-expand-lg p-0 navbar-light fixed-top mb-4">
+            <div class="container">
+                <a class="navbar-brand" href="/index.html">Accesibilitat</a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link topbar" aria-current="page"
+                                href="/perceptibilitat.html">Perceptibilitat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link topbar" href="/operabilitat.html">Operabilitat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active topbar" href="/comprensibilitat.html">Comprensibilitat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link topbar" href="/robustesa.html">Robustesa</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container mt-4">
+            <br>
+            <br>
+            <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+                aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/index.html">Inici</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Comprensibilitat</li>
+                </ol>
+            </nav>
+            <h1>Comprensibilitat</h1>
+        </div>
+    </header>
+
+
+    <div class="w-100 floating-menu mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10"></div>
+                <div class="col-lg-2 mb-3">
+                    <div id="list-example" class="list-group">
+                        <a class="list-group-item list-group-item-action active" href="#mecanismes-navegacio">Mecanismes
+                            de navegacio
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#definicions-paraules">Definicions per
+                            paraules</a>
+                        <a class="list-group-item list-group-item-action" href="#significat-abrebiacions">
+                            Significat de abrebiacions
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="container pt-1">
+        <div class="row mt-0 p-0">
+            <div class="col-lg-2 order-lg-2"></div>
+            <div class="scrollspy-example col-lg-10 order-lg-1" tabindex="0">
+                <h3 id="mecanismes-navegacio">Mecanismes
+                    de navegacio</h3>
+                <article>
+                    <p>
+                    <div class="alert alert-warning" role="alert">
+                        <h5>Resum:</h5>
+                        <ul>
+                            <li><strong>Breadcrumb:</strong> Breadcrumb (llavors) es una mecanica per donar informacio
+                                de on esta en el arbre de la pagina.</li>
+
+                            <li><strong>Barra de navegacio:</strong> Barra de navegacio de la aplicacio web.</li>
+
+                            <li><strong>Navegacio de la pagina:</strong> Barra que mostra on estas de una pagina en
+                                concret.</li>
+                        </ul>
+                    </div>
+                    </p>
+                    <h4>Breadcrumb</h4>
+                    <p>
+                        Breadcrumb (llavors) es una mecanica per donar informacio
+                        de on esta en el arbre de la pagina.
+                    </p>
+                    <h5>Exemple:</h5>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="alert alert-success h-100 pb-0" role="alert">
+                                <p><strong>Correcte</strong></p>
+                                <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+                                    aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="/index.html">Inici</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Robustesa</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <h4>Barra de navegacio</h4>
+                    <p>
+                        Barra de navegacio de la aplicacio web, podria estar fixada a dalt per tindre rapid acces des de
+                        qualsevol lloc de la pagina.
+                        Pot mostrar la pagina actual de la aplicacio i et pot portar a altres pagines de l'aplicatiu.
+                    </p>
+                    <h5>Exemple:</h5>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="alert alert-success h-100 pb-0" role="alert">
+                                <p><strong>Correcte</strong></p>
+                                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                                    <div class="container-fluid">
+                                        <a class="navbar-brand" href="#">Navbar</a>
+                                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#navbarSupportedContent"
+                                            aria-controls="navbarSupportedContent" aria-expanded="false"
+                                            aria-label="Toggle navigation">
+                                            <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">Link</a>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Dropdown
+                                                    </a>
+                                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                        <li>
+                                                            <hr class="dropdown-divider">
+                                                        </li>
+                                                        <li><a class="dropdown-item" href="#">Something else here</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link disabled" href="#" tabindex="-1"
+                                                        aria-disabled="true">Disabled</a>
+                                                </li>
+                                            </ul>
+                                            <form class="d-flex">
+                                                <input class="form-control me-2" type="search" placeholder="Search"
+                                                    aria-label="Search">
+                                                <button class="btn btn-outline-success" type="submit">Search</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <h4>Navegacio de la pagina</h4>
+                    <p>
+                        Barra que mostra on estas de una pagina en
+                        concret.
+                    </p>
+                    <h5>Exemple:</h5>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="alert alert-success h-100 pb-0" role="alert">
+                                <p><strong>Correcte</strong></p>
+                                <ul class="list-group">
+                                    <li class="list-group-item active" aria-current="true">Resum</li>
+                                    <li class="list-group-item">Primera part</li>
+                                    <li class="list-group-item">Segona part</li>
+                                    <li class="list-group-item">Tercera part</li>
+                                    <li class="list-group-item">Part final</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <br>
+                <h3 id="definicions-paraules">Definicions per
+                    paraules</h3>
+                <article>
+                    <p>
+                    <div class="alert alert-warning" role="alert">
+                        <h5>Resum:</h5>
+                        <ul>
+                            <li><strong>Definir paraules:</strong> Definir a aquelles paraules que son de nixol o de una
+                                complexitat mitja/elevada. Tambe es pot enllaçar a una pagina que dongui informacio.
+                            </li>
+                        </ul>
+                    </div>
+                    </p>
+                    <h4>Definir paraules</h4>
+                    <p>
+                        Definir a aquelles paraules que son de nixol o de una
+                        complexitat mitja/elevada.
+                        Tambe es pot enllaçar a una pagina que dongui informacio.
+                    </p>
+                    <h5>Exemple: </h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="alert alert-success h-100 pb-0" role="alert">
+                                <p><strong>Correcte</strong></p>
+                                <p>
+                                    En alguns focs artificials s'utilitza <a
+                                        href="https://es.wikipedia.org/wiki/F%C3%B3sforo_blanco">fòsfor blanc</a>
+                                    (<strong> El
+                                        fòsfor blanc
+                                        és un al·lòtrop
+                                        comú
+                                        de l'element químic fòsfor que ha tingut un ús militar extens com a agent
+                                        incendiari, agent per a crear pantalles de fum i com a component incendiari
+                                        antipersones capaç de causar cremades greus </strong>) per aixi crear fum de
+                                    manera
+                                    artificial.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="alert alert-danger h-100 pb-0" role="alert">
+                                <p><strong>Incorrecte</strong></p>
+                                <p>
+                                    En alguns focs artificials s'utilitza fòsfor blanc per aixi crear fum de manera
+                                    artificial.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+                <br>
+                <h3 id="significat-abrebiacions">Significat de abrebiacions</h3>
+                <article>
+                    <p>
+                    <div class="alert alert-warning" role="alert">
+                        <h5>Resum:</h5>
+                        <li><strong>Significat de abrebiacions:</strong> Explicar el significat de abrebiacions que
+                            apareixen durant la pagina.
+                        </li>
+                    </div>
+                    </p>
+                    <h4>Significat de abrebiacions</h4>
+                    <p>
+                        Explicar el significat de abrebiacions que
+                        apareixen durant la pagina.
+                    </p>
+                    <h5>Exemple: </h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="alert alert-success h-100 pb-0" role="alert">
+                                <p><strong>Correcte</strong></p>
+                                <p>
+                                    Durant la creacio de aquesta pagina m'he documentat moltisim amb W3C <strong>(World
+                                        Wide Web
+                                        Consortium)</strong> per generar
+                                    documentacio de calitat sobre la accesibilitat.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="alert alert-danger h-100 pb-0" role="alert">
+                                <p><strong>Incorrecte</strong></p>
+                                <p>
+                                    Durant la creacio de aquesta pagina m'he documentat moltisim amb W3C per generar
+                                    documentacio de calitat sobre la accesibilitat.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <br>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright:
+            <a class="text-dark" href="/index.html">Arnau Costa Accesibilitat</a>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>

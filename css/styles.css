@@ -1,0 +1,46 @@
+:root {
+  font-family: "Open Sans";
+  --text-primary: #141418;
+  --text-secondary: #19191f;
+}
+
+.input:focus {
+  outline: none !important;
+  box-shadow: none;
+  border: 1px solid var(--text-primary);
+  border-bottom: 3px solid #0088cc;
+  border-radius: 0;
+}
+
+.input {
+  border: 1px solid var(--text-primary);
+  border-radius: 0;
+  border-radius: 0px;
+  height: 58px;
+}
+
+.is-invalid {
+  border: 1px solid #f73b3b !important;
+  border-bottom: 3px solid #f73b3b !important;
+}
+
+.boto-principal {
+  border: none;
+  outline: none;
+  background-color: #005ce6;
+  border-radius: 0px;
+  border-bottom: 3px solid #80b3ff;
+  padding: 7px;
+  color: white;
+}
+
+.boto-principal:focus {
+  border-bottom: 4px solid #80b3ff;
+  background-color: #1a75ff;
+  padding-bottom: 6px;
+  border-radius: 1px;
+}
+
+.contenidorForm {
+  background-color: #b3e6ff;
+}

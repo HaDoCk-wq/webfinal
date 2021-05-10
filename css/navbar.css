@@ -1,0 +1,29 @@
+.navbar {
+  background-color: #eeeeee;
+}
+
+.nav-link.active.topbar {
+  border-bottom: 4px solid var(--color-principal);
+  padding-bottom: 3px !important;
+}
+
+.nav-link.active.topbar:hover {
+  border-bottom: 5px solid var(--color-selected);
+  background-color: #bbbbbb;
+}
+
+.nav-link.topbar:hover {
+  background-color: #d3d3d3;
+}
+
+.nav-link.topbar:hover {
+  background-color: #bbbbbb;
+}
+
+@media (max-width: 991px) {
+  .nav-link.active.topbar {
+    border-bottom: none;
+    background-color: #bbbbbb;
+    padding: 5px !important;
+  }
+}

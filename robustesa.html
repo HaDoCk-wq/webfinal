@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robustesa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/theme.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#list-example">
+
+    <header>
+        <nav class="navbar navbar-expand-lg p-0 navbar-light fixed-top mb-4">
+            <div class="container">
+                <a class="navbar-brand" href="/index.html">Accesibilitat</a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link topbar" aria-current="page"
+                                href="/perceptibilitat.html">Perceptibilitat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link topbar" href="/operabilitat.html">Operabilitat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link topbar" href="/comprensibilitat.html">Comprensibilitat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active topbar" href="/robustesa.html">Robustesa</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container mt-4">
+            <br>
+            <br>
+            <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+                aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/index.html">Inici</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Robustesa</li>
+                </ol>
+            </nav>
+            <h1>Robustesa</h1>
+        </div>
+    </header>
+
+
+    <div class="w-100 floating-menu mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10"></div>
+                <div class="col-lg-2 mb-3">
+                    <div id="list-example" class="list-group">
+                        <a class="list-group-item list-group-item-action active" href="#marcat-etiquetas">Correcte
+                            marcat de etiquetas</a>
+                        <a class="list-group-item list-group-item-action" href="#interficie-usuari">Interficie de
+                            usuari</a>
+                        <a class="list-group-item list-group-item-action" href="#misatges-estat">Presentacio
+                            de misatges de estat</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="container pt-1">
+        <div class="row mt-0 p-0">
+            <div class="col-lg-2 order-lg-2"></div>
+            <div class="scrollspy-example col-lg-10 order-lg-1" tabindex="0">
+                <h3 id="marcat-etiquetas">Correcte
+                    marcat de etiquetas</h3>
+                <article>
+                    <p>
+                    <div class="alert alert-warning" role="alert">
+                        <h5>Resum:</h5>
+                        <li><strong>Correcte
+                                marcat de etiquetas:</strong> En el contingut implementat utilitzant llenguatges de
+                            marques,
+                            els elements tenen etiquetes d'inici i final complets, els elements estan niats d'acord amb
+                            les seves especificacions, els elements no contenen atributs duplicats, i qualsevol
+                            identificador és únic, excepte on les especificacions permeten aquestes característiques.
+                        </li>
+                    </div>
+                    </p>
+                    <h4>Obrir i tencar tags</h4>
+                    <p>
+                        Per tindre un bon html cal que sigui valid, per tant els tags html s'han de tencar.
+                    </p>
+                    <h5>Exemples: </h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="alert alert-success h-100 pb-0" role="alert">
+                                <p><strong>Correcte</strong></p>
+                                <pre xml:space="preserve" class="mb-0">
+    &lt;div&gt;
+        &lt;h1&gt;
+            Aixo es correcte
+        &lt;/h1&gt;
+    &lt;/div&gt;</pre>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="alert alert-danger h-100 pb-0" role="alert">
+                                <p><strong>Incorrecte</strong></p>
+                                <pre xml:space="preserve" class="mb-0">
+    &lt;div&gt; 
+        &lt;h1&gt;
+        Aixo es incorrecte
+    &lt;/div&gt;</pre>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="alert alert-success h-100 pb-0" role="alert">
+                                <p><strong>Correcte</strong></p>
+                                <pre xml:space="preserve" class="mb-0">
+    &lt;div&gt; 
+        &lt;h1&gt;
+        Aixo es correcte
+        &lt;/h1&gt;
+    &lt;/div&gt;</pre>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="alert alert-danger h-100 pb-0" role="alert">
+                                <p><strong>Incorrecte</strong></p>
+                                <pre xml:space="preserve" class="mb-0">
+    &lt;div&gt; 
+        &lt;h1&gt;
+        Aixo es incorrecte
+        &lt;/div&gt;
+    &lt;/div&gt;</pre>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="alert alert-success h-100 pb-0" role="alert">
+                                <p><strong>Correcte</strong></p>
+                                <pre xml:space="preserve" class="mb-0">
+    &lt;div&gt; 
+        &lt;h1&gt;
+        Aixo es correcte
+        &lt;<strong>/</strong>h1&gt;
+    &lt;/div&gt;
+    <p class="text-muted m-0">En aquesta ultima notar que tenca amb una (/) barra.</p></pre>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="alert alert-danger h-100 pb-0" role="alert">
+                                <p><strong>Incorrecte</strong></p>
+                                <pre xml:space="preserve" class="mb-0">
+    &lt;div&gt; 
+        &lt;h1&gt;
+        Aixo es incorrecte
+        &lt;<strong>h1</strong>&gt;
+    &lt;/div&gt; <p class="text-muted m-0">
+En aquesta ultima notar que no tenca la (/) barra.
+    </p></pre>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <h4>No tindre id duplicades</h4>
+                    <p>
+                        Es important no tindre elements amb id duplicades.
+                    </p>
+                    <h5>Exemple: </h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="alert alert-success h-100 pb-0" role="alert">
+                                <p><strong>Correcte</strong></p>
+                                <pre xml:space="preserve" class="mb-0">
+    &lt;div&gt; 
+        &lt;h1 id="<strong>titolPagina</strong>"&gt;
+            Aixo es correcte
+        &lt;/h1&gt;
+        &lt;h2 id="<strong>segonTitol</strong>"&gt;
+            Aixo es correcte
+        &lt;/h2&gt;
+    &lt;/div&gt;<p class="text-muted m-0">
+Els id tenen diferents noms</p></pre>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="alert alert-danger h-100 pb-0" role="alert">
+                                <p><strong>Incorrecte</strong></p>
+                                <pre xml:space="preserve" class="mb-0">
+    &lt;div&gt; 
+        &lt;h1 id="<strong>titolPagina</strong>"&gt;
+            Aixo es incorrecte
+        &lt;/h1&gt;
+        &lt;h2 id="<strong>titolPagina</strong>"&gt;
+            Aixo es incorrecte
+        &lt;/h2&gt;
+    &lt;/div&gt;</pre>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <h4>No tindre atributs duplicats</h4>
+                    <p>
+                        Es important no tindre atributs duplicats en un mateix element.
+                    </p>
+                    <h5>Exemple: </h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="alert alert-success h-100 pb-0" role="alert">
+                                <p><strong>Correcte</strong></p>
+                                <pre xml:space="preserve" class="mb-0">
+    &lt;div&gt; 
+        &lt;h1 <strong>class</strong>="navbar fixed-top"&gt;
+            Aixo es correcte
+        &lt;/h1&gt;
+    &lt;/div&gt;
+                                    </pre>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="alert alert-danger h-100 pb-0" role="alert">
+                                <p><strong>Incorrecte</strong></p>
+                                <pre xml:space="preserve" class="mb-0">
+    &lt;div&gt; 
+        &lt;h1 <strong>class</strong>="navbar" <strong>class</strong>="fixed-top"&gt;
+            Aixo es incorrecte
+        &lt;/h1&gt;
+    &lt;/div&gt;</pre>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </article>
+
+                <br>
+                <h3 id="interficie-usuari">Interficie de
+                    usuari</h3>
+                <article>
+                    <p>
+                    <div class="alert alert-warning" role="alert">
+                        <h5>Resum:</h5>
+
+                    </div>
+                    </p>
+                    <h4>Text</h4>
+                    <p>
+                        text
+                    </p>
+                    <h5>Exemple: </h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="alert alert-success h-100 pb-0" role="alert">
+                                <p><strong>Correcte</strong></p>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="alert alert-danger h-100 pb-0" role="alert">
+                                <p><strong>Incorrecte</strong></p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+                <hr>
+
+                <br>
+                <h3 id="misatges-estat">Presentacio
+                    de misatges de estat</h3>
+                <article>
+                    <p>
+                    <div class="alert alert-warning" role="alert">
+                        <h5>Resum:</h5>
+                        <li><strong>Misatges de estat:</strong> Per evitar que el usuari no entengui que esta fent la
+                            pagina cal mostrar misatges de estat dient que esta pasant a la pagina.
+                        </li>
+                        <li><strong>Interaccio visual:</strong> Per ubicar el usuari sobre que esta fent la aplicacio es
+                            poden utilitzar algunes eines visuals per mostrar que la opcio que intenta fer servir esta
+                            carregant.
+                        </li>
+                    </div>
+                    </p>
+                    <h4>Misatges de estat</h4>
+                    <p>
+                        Per evitar que el usuari no entengui que esta fent la
+                        pagina cal mostrar misatges de estat dient que esta pasant a la pagina.
+                    </p>
+                    <h5>Exemples: </h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="alert alert-success h-100 pb-0" role="alert">
+                                <p><strong>Correcte</strong></p>
+                                <div class="p-4 border" style="background-color: white;">
+                                    <p class="text-muted">
+                                        El usuari acava de fer login i no ha escrit la contrasenya correctament.
+                                    </p>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label ">Contrasenya</label>
+                                        <input type="password" class="form-control is-invalid"
+                                            id="exampleInputPassword1">
+                                        <div class="invalid-feedback">
+                                            La contrasenya es incorrecte.
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Envia</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="alert alert-danger h-100 pb-0" role="alert">
+                                <p><strong>Incorrecte</strong></p>
+                                <div class="p-4 border " style="background-color: white;">
+                                    <p class="text-muted">
+                                        El usuari acava de fer login i no ha escrit la contrasenya correctament.
+                                    </p>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label ">Contrasenya</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Envia</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="alert alert-success h-100 pb-0" role="alert">
+                                <p><strong>Correcte</strong></p>
+                                <div class="p-4 border " style="background-color: white;">
+                                    <p class="text-muted">
+                                        El usuari acava de omplir un formulari i el sercidor ha rebutjat la peticio.
+                                    </p>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon1">@</span>
+                                        <input type="text" class="form-control" placeholder="Username"
+                                            aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Recipient's username"
+                                            aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                        <span class="input-group-text" id="basic-addon2">@example.com</span>
+                                    </div>
+
+                                    <label for="basic-url" class="form-label">Your vanity URL</label>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text"
+                                            id="basic-addon3">https://example.com/users/</span>
+                                        <input type="text" class="form-control" id="basic-url"
+                                            aria-describedby="basic-addon3">
+                                    </div>
+
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">$</span>
+                                        <input type="text" class="form-control"
+                                            aria-label="Amount (to the nearest dollar)">
+                                        <span class="input-group-text">.00</span>
+                                    </div>
+
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Username"
+                                            aria-label="Username">
+                                        <span class="input-group-text">@</span>
+                                        <input type="text" class="form-control" placeholder="Server"
+                                            aria-label="Server">
+                                    </div>
+
+                                    <div class="alert alert-danger h-100 p-2" role="alert">
+                                        El servidor ha rebutjat la seva peticio
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="alert alert-danger h-100 pb-0" role="alert">
+                                <p><strong>Incorrecte</strong></p>
+                                <div class="p-4 border" style="background-color: white;">
+                                    <p class="text-muted">
+                                        El usuari acava de omplir un formulari i el sercidor ha rebutjat la peticio.
+                                    </p>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon1">@</span>
+                                        <input type="text" class="form-control" placeholder="Username"
+                                            aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Recipient's username"
+                                            aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                        <span class="input-group-text" id="basic-addon2">@example.com</span>
+                                    </div>
+
+                                    <label for="basic-url" class="form-label">Your vanity URL</label>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text"
+                                            id="basic-addon3">https://example.com/users/</span>
+                                        <input type="text" class="form-control" id="basic-url"
+                                            aria-describedby="basic-addon3">
+                                    </div>
+
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">$</span>
+                                        <input type="text" class="form-control"
+                                            aria-label="Amount (to the nearest dollar)">
+                                        <span class="input-group-text">.00</span>
+                                    </div>
+
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Username"
+                                            aria-label="Username">
+                                        <span class="input-group-text">@</span>
+                                        <input type="text" class="form-control" placeholder="Server"
+                                            aria-label="Server">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <h4>Interaccio visual</h4>
+                    <p>
+                        Per ubicar el usuari sobre que esta fent la aplicacio es
+                        poden utilitzar algunes eines visuals per mostrar que la opcio que intenta fer servir esta
+                        carregant.
+                    </p>
+                    <h5>Exemples: </h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="alert alert-success h-100 pb-0" role="alert">
+                                <p><strong>Correcte</strong></p>
+                                <p>
+                                    Aquests botons no enviaran les dades ja que encarra no ha carregat tota la pagina
+                                </p>
+                                <div class="p-4">
+                                    <button class="btn btn-primary">
+                                        <div class="spinner-border spinner-border-sm"
+                                            style="border-radius: 50% !important;" role="status">
+                                            <span class="visually-hidden">Loading...</span>
+                                        </div>
+                                        Envia
+                                    </button>
+                                    <button class="btn btn-primary">
+                                        <div class="spinner-grow spinner-grow-sm" style="border-radius: 50% !important;"
+                                            role="status">
+                                            <span class="visually-hidden">Loading...</span>
+                                        </div>
+                                        Envia
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="alert alert-danger h-100 pb-0" role="alert">
+                                <p><strong>Incorrecte</strong></p>
+                                <p>
+                                    Aquests botons no enviaran les dades ja que encarra no ha carregat tota la pagina
+                                </p>
+                                <div class="p-4">
+                                    <button class="btn btn-primary">
+
+                                        Envia
+                                    </button>
+                                    <button class="btn btn-primary">
+
+                                        Envia
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </article>
+
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright:
+            <a class="text-dark" href="/index.html">Arnau Costa Accesibilitat</a>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
+    <script>
+        // var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+        //     target: '#navbar-example'
+        // })
+        // var dataSpyList = [].slice.call(document.querySelectorAll('[data-bs-spy="scroll"]'))
+        // dataSpyList.forEach(function (dataSpyEl) {
+        //     bootstrap.ScrollSpy.getInstance(dataSpyEl)
+        //         .refresh()
+        // })
+    </script>
+
+
+</body>
+
+</html>
