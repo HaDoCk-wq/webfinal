@@ -166,7 +166,7 @@ session_start();
                             <td><?= $linia['telephonenumber'][0] ?></td>
                             <td><?= $linia['mobile'][0] ?></td>
                             <td><?= $linia['mail'][0] ?></td>
-                            <td><?= $linia['user name'][0] ?></td>
+                            <td><?= $linia['username'][0] ?></td>
                             <td><?= $linia['o'][0] ?></td>
                             <td><?= $linia['ou'][0] ?></td>
                         </tr>
@@ -179,6 +179,7 @@ session_start();
                 <th scope="col">Cognoms</th>
                 <th scope="col" colspan="2">Telefons (inclou fix i mobil)</th>
                 <th scope="col">Email</th>
+                <th scope="col">Nom d’usuari</th>
                 <th scope="col">Institut</th>
                 <th scope="col">Grup</th>
             </tfoot>
