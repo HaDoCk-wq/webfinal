@@ -40,21 +40,21 @@ session_start();
                 <div class="col-md-12">
                     <div class="mb-3">
                         <label for="nom" class="text-sec">Nom</label>
-                        <input type="text" class="form-control text-sec bg-pry input" id="nom" name="nom"
+                        <input type="text" class="form-control text-sec bg-pry input" id="nom" name="cn"
                             placeholder="Nom" />
                     </div>
                 </div>
                 <div class="col-md-12">
                     <div class="mb-3">
                         <label for="cognoms" class="text-sec">Cognoms</label>
-                        <input type="text" class="form-control text-sec bg-pry input" id="cognoms" name="cognoms"
+                        <input type="text" class="form-control text-sec bg-pry input" id="cognoms" name="sn"
                             placeholder="Cognoms" />
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="mb-3">
                         <label for="telfix" class="text-sec">Telèfon fix</label>
-                        <input type="number" class="form-control text-sec bg-pry input" id="telfix" name="telfix"
+                        <input type="number" class="form-control text-sec bg-pry input" id="telfix" name="telefon"
                             placeholder="Telèfon fix" />
                     </div>
                 </div>
@@ -68,14 +68,14 @@ session_start();
                 <div class="col-md-6">
                     <div class="mb-3">
                         <label for="insorg" class="text-sec">Email</label>
-                        <input type="email" class="form-control text-sec bg-pry input" id="email" name="insorg"
+                        <input type="email" class="form-control text-sec bg-pry input" id="email" name="email"
                             placeholder="Email" />
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="mb-3">
                         <label for="insorg" class="text-sec">Institut / Organització</label>
-                        <input type="text" class="form-control text-sec bg-pry input" id="insorg" name="insorg"
+                        <input type="text" class="form-control text-sec bg-pry input" id="insorg" name="o"
                             placeholder="Institut / Organització" />
                     </div>
                 </div>
@@ -88,8 +88,8 @@ session_start();
                 </div>
                 <div class="col-md-6">
                     <label for="username" class="text-sec">Grup</label>
-                    <select class="form-select input form-select-lg mb-3" aria-label=".form-select-lg example">
-                        <option value="tots" selected>Tots</option>
+                    <select class="form-select input form-select-lg mb-3" aria-label=".form-select-lg example" name="grup">
+                        <option value="" selected>Tots</option>
                         <option value="professors">Professors</option>
                         <option value="alumnes">Alumnes</option>
                     </select>

@@ -7,7 +7,7 @@ jQuery.validator.addMethod("mobilValid", function (value, element, params) {
 
 $("#formulari").validate({
   rules: {
-    telfix: {
+    telefon: {
       telefonValid: true,
     },
     mobil: {
@@ -18,7 +18,7 @@ $("#formulari").validate({
     },
   },
   messages: {
-    telfix: {
+    telefon: {
       telefonValid: "Aquest no es un telefon valid",
     },
     mobil: {
