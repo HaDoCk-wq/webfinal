@@ -183,7 +183,7 @@ session_start();
                 </tfoot>
             </table>
         </div>
-        <?php isset($_SESSION['resultats'] = null; ?>
+        <?php $_SESSION['resultats'] = null; ?>
     <?php endif; ?>
 </body>
 
