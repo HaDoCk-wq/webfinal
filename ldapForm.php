@@ -116,7 +116,7 @@ session_start();
                 <div class="col-md-6">
                     <div class="mb-3">
                         <label for="username" class="text-sec">Nom d’usuari</label>
-                        <input type="text" class="form-control text-sec bg-pry input" id="uid" name="username"
+                        <input type="text" class="form-control text-sec bg-pry input" id="uid" name="uid"
                             placeholder="Nom d’usuari" />
                     </div>
                 </div>
@@ -128,6 +128,7 @@ session_start();
                         <option value="alumnesAC">Alumnes</option>
                     </select>
                 </div>
+                
             </div>
             <div class="d-flex flex-wrap">
                 <div class="flex-fill"></div>
