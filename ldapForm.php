@@ -19,8 +19,6 @@ session_start();
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
 
     <link href="css/styles.css" rel="stylesheet">
-
-
 </head>
 
 

@@ -10,6 +10,7 @@ $("#form").validate({
       minlength: 3,
     },
   },
+
   messages: {
     password: {
       required: "Introdueix la contrasenya",
