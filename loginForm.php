@@ -18,7 +18,7 @@ session_start();
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
 
-    <link href="/css/styles.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 
 
 </head>
@@ -69,7 +69,7 @@ session_start();
     integrity="sha512-UdIMMlVx0HEynClOIFSyOrPggomfhBKJE28LKl8yR3ghkgugPnG6iLfRfHwushZl1MOPSY6TsuBDGPK2X4zYKg=="
     crossorigin="anonymous"></script>
 
-<script src="/js/login.js"></script>
+<script src="js/login.js"></script>
 
 
 </html>
