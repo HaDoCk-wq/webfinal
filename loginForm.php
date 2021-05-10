@@ -54,7 +54,7 @@ session_start();
                     
                 <?php endif; ?>
 
-                <?php $_SESSION['loginError'] = "": ?>
+                <?php $_SESSION['loginError'] = null: ?>
 
             </form>
         </div>
