@@ -123,7 +123,7 @@ session_start();
                 <div class="col-md-6">
                     <label for="username" class="text-sec">Grup</label>
                     <select class="form-select input form-select-lg mb-3" aria-label=".form-select-lg example" name="grup">
-                        <option value="" selected>Tots</option>
+                        <option value="*" selected>Tots</option>
                         <option value="professorsAC">Professors</option>
                         <option value="alumnesAC">Alumnes</option>
                     </select>
@@ -136,6 +136,7 @@ session_start();
         </form>
     </div>
     <br>
+    <?= $_SESSION['resultats'] ?>
     <?php if(isset($_SESSION['resultats'])): ?>
         <div class="container">
 
