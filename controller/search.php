@@ -51,5 +51,5 @@ $filtre = $filtre . ')';
 $resultats = $ldap->search($filtre,$group);
 $_SESSION['filtre'] = $filtre;
 $_SESSION['resultats'] = $resultats;
-//header('Location: ../ldapForm.php');
+header('Location: ../ldapForm.php');
 ?>
