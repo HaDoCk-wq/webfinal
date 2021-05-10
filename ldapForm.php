@@ -166,7 +166,7 @@ session_start();
                             <td><?= $linia['telephonenumber'][0] ?></td>
                             <td><?= $linia['mobile'][0] ?></td>
                             <td><?= $linia['mail'][0] ?></td>
-                            <td><?= $linia['uid'][0] ?></td>
+                            <td><?= $linia['user name'][0] ?></td>
                             <td><?= $linia['o'][0] ?></td>
                             <td><?= $linia['ou'][0] ?></td>
                         </tr>
