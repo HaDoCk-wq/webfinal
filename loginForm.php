@@ -27,7 +27,7 @@ session_start();
 <body class=" pt-4">
     <div class="container pt-4" style="max-width: 900px">
         <div class="contenidorForm mt-4 p-4">
-            <form method="POST" id="form" action="../controller/login.php">
+            <form method="POST" id="form" action="controller/login.php">
                 <div class="d-flex flex-wrap">
                     <h1 class="text-sec text-start loginTitle">Login</h1>
                     <div class="flex-fill"></div>
