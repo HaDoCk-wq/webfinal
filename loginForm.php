@@ -41,6 +41,7 @@ session_start();
                     <div class="flex-fill"></div>
                     <button type="submit" class="boto-principal">Login</button>
                 </div>
+                <br>
                 <?php if (!empty($_SESSION['loginError'])): ?>
 
                     <div class="alert alert-danger d-flex align-items-center" role="alert">
@@ -55,7 +56,6 @@ session_start();
                 <?php endif; ?>
 
                 <?php $_SESSION['loginError'] = null; ?>
-
             </form>
         </div>
     </div>
