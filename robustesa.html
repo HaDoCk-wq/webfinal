@@ -18,7 +18,8 @@
     <header>
         <nav class="navbar navbar-expand-lg p-0 navbar-light fixed-top mb-4">
             <div class="container">
-                <a class="navbar-brand" href="index.html">Accesibilitat</a>
+                <a class="navbar-brand" title="Menu per triar la pagina que s'accedeix"
+                    href="index.html">Accesibilitat</a>
                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -27,20 +28,24 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link topbar" aria-current="page"
+                            <a class="nav-link topbar" title="Pagina de perceptibilitat" aria-current="page"
                                 href="perceptibilitat.html">Perceptibilitat</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link topbar" href="operabilitat.html">Operabilitat</a>
+                            <a class="nav-link topbar" title="Pagina de Operabilitat"
+                                href="operabilitat.html">Operabilitat</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link topbar" href="comprensibilitat.html">Comprensibilitat</a>
+                            <a class="nav-link topbar" title="Pagina de Comprensibilitat"
+                                href="comprensibilitat.html">Comprensibilitat</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active topbar" href="robustesa.html">Robustesa</a>
+                            <a class="nav-link active topbar" title="Pagina de Robustesa"
+                                href="robustesa.html">Robustesa</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link topbar" href="loginForm.php">Formulari</a>
+                            <a class="nav-link topbar" title="Porta a el login del formulari"
+                                href="loginForm.php">Formulari</a>
                         </li>
                     </ul>
                 </div>
@@ -89,13 +94,17 @@
                     <p>
                     <div class="alert alert-warning" role="alert">
                         <h5>Resum:</h5>
-                        <li><strong>Correcte
-                                marcat de etiquetas:</strong> En el contingut implementat utilitzant llenguatges de
-                            marques,
-                            els elements tenen etiquetes d'inici i final complets, els elements estan niats d'acord amb
-                            les seves especificacions, els elements no contenen atributs duplicats, i qualsevol
-                            identificador és únic, excepte on les especificacions permeten aquestes característiques.
-                        </li>
+                        <ul>
+                            <li><strong>Correcte
+                                    marcat de etiquetas:</strong> En el contingut implementat utilitzant llenguatges de
+                                marques,
+                                els elements tenen etiquetes d'inici i final complets, els elements estan niats d'acord
+                                amb
+                                les seves especificacions, els elements no contenen atributs duplicats, i qualsevol
+                                identificador és únic, excepte on les especificacions permeten aquestes
+                                característiques.
+                            </li>
+                        </ul>
                     </div>
                     </p>
                     <h4>Obrir i tencar tags</h4>
@@ -257,25 +266,40 @@ Els id tenen diferents noms</p></pre>
                     <p>
                     <div class="alert alert-warning" role="alert">
                         <h5>Resum:</h5>
+                        <strong>
+                            Robustesa:
+                        </strong> Robustesa en la pagina per la gestio de errors. Els inputs dels usuaris no poden fer
+                        fallar l'aplicatiu per una mala introduccio de las dades.
 
                     </div>
                     </p>
-                    <h4>Text</h4>
+                    <h4>Robustesa</h4>
                     <p>
-                        text
+                        Robustesa en la pagina per la gestio de errors. Els inputs dels usuaris no poden fer
+                        fallar l'aplicatiu per una mala introduccio de las dades.
                     </p>
                     <h5>Exemple: </h5>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="alert alert-success h-100 pb-0" role="alert">
                                 <p><strong>Correcte</strong></p>
-
+                                <label for="testInterficie1" class="form-label">Edat</label>
+                                <input type="text" id="testInterficie1" class="form-control is-invalid" value="sa"
+                                    aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                <div class="invalid-feedback">
+                                    La edat ha de ser un numero.
+                                </div>
+                                <br>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="alert alert-danger h-100 pb-0" role="alert">
                                 <p><strong>Incorrecte</strong></p>
-
+                                <label for="testInterficie1" class="form-label">Edat</label>
+                                <input type="text" id="testInterficie1" class="form-control" value="sa"
+                                    aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                <br>
+                                <p>Despres de aixo el programa fallaria</p>
                             </div>
                         </div>
                     </div>
@@ -290,13 +314,18 @@ Els id tenen diferents noms</p></pre>
                     <p>
                     <div class="alert alert-warning" role="alert">
                         <h5>Resum:</h5>
-                        <li><strong>Misatges de estat:</strong> Per evitar que el usuari no entengui que esta fent la
-                            pagina cal mostrar misatges de estat dient que esta pasant a la pagina.
-                        </li>
-                        <li><strong>Interaccio visual:</strong> Per ubicar el usuari sobre que esta fent la aplicacio es
-                            poden utilitzar algunes eines visuals per mostrar que la opcio que intenta fer servir esta
-                            carregant.
-                        </li>
+                        <ul>
+                            <li><strong>Misatges de estat:</strong> Per evitar que el usuari no entengui que esta fent
+                                la
+                                pagina cal mostrar misatges de estat dient que esta pasant a la pagina.
+                            </li>
+                            <li><strong>Interaccio visual:</strong> Per ubicar el usuari sobre que esta fent la
+                                aplicacio es
+                                poden utilitzar algunes eines visuals per mostrar que la opcio que intenta fer servir
+                                esta
+                                carregant.
+                            </li>
+                        </ul>
                     </div>
                     </p>
                     <h4>Misatges de estat</h4>

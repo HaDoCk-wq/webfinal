@@ -7,6 +7,7 @@ if(!empty($pass)){
     $ldap = new LdapAC('cn=admin,dc=dawAC,dc=cat');
     var_dump($ldap);
     if($ldap->authUser($pass)){
+        $_SESSION["loged"] = true;
         header('Location: ../ldapForm.php');
     }else{
         $_SESSION['loginError'] = 'Login incorrecte';

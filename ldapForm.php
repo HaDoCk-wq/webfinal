@@ -53,6 +53,9 @@ session_start();
                         <a class="nav-link active topbar" href="loginForm.php">Formulari</a>
                     </li>
                 </ul>
+                <form class="d-flex">
+                    <a href="controller/logout.php" class="btn btn-outline-success">Logout</a>
+                </form>
             </div>
         </div>
     </nav>

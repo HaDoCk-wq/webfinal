@@ -1,6 +1,8 @@
 <?php
 session_start();
-
+if($_SESSION["loged"]){
+    header('Location: ../ldapForm.php');
+}
 ?>
 
 <!DOCTYPE html>
