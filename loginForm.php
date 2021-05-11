@@ -1,9 +1,7 @@
 <?php
 session_start();
 var_dump($_SESSION["loged"])
-// if($_SESSION["loged"] == true){
-//     header('Location: ldapForm.php');
-// }
+
 ?>
 
 <!DOCTYPE html>
