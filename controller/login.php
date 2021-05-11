@@ -5,7 +5,6 @@ include ('../model/LdapAC.php');
 $pass = $_POST['password'];
 if(!empty($pass)){
     $ldap = new LdapAC('cn=admin,dc=dawAC,dc=cat');
-    var_dump($ldap);
     if($ldap->authUser($pass)){
         $_SESSION["loged"] = true;
         header('Location: ../ldapForm.php');
