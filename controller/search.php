@@ -31,7 +31,7 @@ if(!empty($_POST['mobil'])){
 
 if(!empty($_POST['email'])){
     $aux = $_POST['email'];
-    $filtre = $filtre . '(email=' . $aux . ')';
+    $filtre = $filtre . '(mail=' . $aux . ')';
 }
 
 if(!empty($_POST['o'])){
